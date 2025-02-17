@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="forum">
+        <h2>Discussion Topics</h2>
+
+        <!-- Add New Post -->
+        <form id="new-post-form">
+            <input type="text" id="post-title" placeholder="Post Title" required>
+            <textarea id="post-content" placeholder="Write your discussion here..." required></textarea>
+            <button type="submit">Post</button>
+        </form>
+
+        <!-- Posts Section -->
+        <div id="posts">
+            <h3>Recent Discussions</h3>
+
+            <div class="post">
+                <h4>How to improve programming skills?</h4>
+                <p>Posted by John Doe - 2 hours ago</p>
+                <p>I'm struggling with Python. Any tips on how to practice effectively?</p>
+                
+                <div class="actions">
+                    <button class="like-btn">👍 <span class="like-count">0</span></button>
+                    <button class="dislike-btn">👎 <span class="dislike-count">0</span></button>
+                    <button class="reply-btn">Reply</button>
+                </div>
+
+                <!-- Replies Section -->
+                <div class="replies">
+                    <form class="reply-form">
+                        <textarea placeholder="Write a reply..." required></textarea>
+                        <button type="submit">Reply</button>
+                    </form>
+                    <div class="reply-list">
+                        <p><strong>Jane Smith:</strong> Try building small projects like calculators or to-do apps!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Learning Platform</p>
+    </footer>
+
+    <script src="forum.js"></script>
+</body>
+</html>

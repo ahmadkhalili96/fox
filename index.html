@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Help Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Student Help Center</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="login.html">Login</a>
+            <a href="forum.html">Forum</a>
+			<a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h2>Enhance Your Knowledge with Powered Learning</h2>
+        <p>Join our platform and explore a variety of courses with interactive lessons and quizzes.</p>
+        <a href="course.html" class="btn">Browse Courses</a>
+        <a href="forum.html" class="btn btn-secondary">Join the Discussion</a>
+    </section>
+
+    <section class="latest-posts">
+        <h2>Recent Forum Discussions</h2>
+        <div id="forum-posts">
+            <p>Loading latest discussions...</p>
+        </div>
+        <a href="forum.html" class="btn">Go to Forum</a>
+    </section>
+
+    <script src="index.js"></script>
+	
+<!-- Chatbot Button -->
+    <button id="chatbot-btn">Chat with Assistant</button>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot">
+        <div class="chat-header">
+            <span>AI Learning Assistant</span>
+            <button id="close-chat">×</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <p class="bot-message">Hello! Ask me anything about this course.</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Type your question...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+
+    <!-- Chatbot Section -->
+    <section id="chatbot-section">
+        <div id="chatbot">
+            <div id="chatbot-header">
+                <h3>Ask a question</h3>
+                <button onclick="toggleChatbot()">X</button>
+            </div>
+            <div id="chatbot-messages">
+                <!-- Messages will appear here -->
+            </div>
+            <input type="text" id="chat-input" placeholder="Ask about courses...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+	
+	  
+</body>
+</html>

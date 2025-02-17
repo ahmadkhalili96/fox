@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Courses</h1>
+    </header>
+	
+	  <section class="course-search">
+        <h2>Find Your Course</h2>
+        <input type="text" id="search-input" placeholder="Search for a course...">
+        <label for="category-filter">Category:</label>
+        <select id="category-filter">
+            <option value="all">All</option>
+            <option value="Programming">Programming</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="AI & Machine Learning">AI & Machine Learning</option>
+        </select>
+
+        <label for="sort-order">Sort by:</label>
+        <select id="sort-order">
+            <option value="name">Course Name (A-Z)</option>
+            <option value="newest">Newest First</option>
+        </select>
+
+        <button id="search-btn">Search</button>
+        <div id="search-results"></div>
+    </section>
+
+   
+
+    <!-- Chatbot Button -->
+    <button id="chatbot-btn">Chat with Assistant</button>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot">
+        <div class="chat-header">
+            <span>AI Learning Assistant</span>
+            <button id="close-chat">×</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <p class="bot-message">Hello! Ask me anything about this course.</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Type your question...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
